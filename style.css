@@ -131,3 +131,25 @@
     background-position: center;
     color: transparent;
  }
+ .key:hover{
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+    box-shadow: 4px 4px 41px 23px rgb(220, 143, 143);
+    border-radius: 30%;
+    font-size: 1em;
+}
+
+.key:hover:not(.key-Shift, .key-Space, .key-Tab, .key-Alt, .key-Backspace, .key-CapsLock, .key-Ctrl, .key-Del, .key-Down, .key-Enter, .key-Left, .key-Right, .key-Up, .key-Win),
+.key:active:not(.key-Shift, .key-Space, .key-Tab, .key-Alt, .key-Backspace, .key-CapsLock, .key-Ctrl, .key-Del, .key-Down, .key-Enter, .key-Left, .key-Right, .key-Up, .key-Win),
+.pressed:not(.key-Shift, .key-Space, .key-Tab, .key-Alt, .key-Backspace, .key-CapsLock, .key-Ctrl, .key-Del, .key-Down, .key-Enter, .key-Left, .key-Right, .key-Up, .key-Win){
+    transform: scale(1.1);
+    box-shadow: 4px 4px 41px 23px rgb(220, 143, 143);
+    transition-duration: 0.1s;
+    border-radius: 30%;
+    font-size: 1em;
+}
+
+.key span {
+    position: relative;
+    top: 30%;
+}
