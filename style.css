@@ -53,6 +53,13 @@
     transition-duration: 0.1s;
 }
 
+.key:active,
+.pressed:not(.key-Shift),
+.enabled {
+    transform: scale(0.8);
+    transition-duration: 0.1s;
+}
+
 .footer{
     text-align: center;
     font-size: 20px;
@@ -64,14 +71,12 @@
     align-self: center;
     margin-top: 10px;
 }
-
 .key-Enter{
     width: 100px;
     border-radius: 20px;
     background-size: cover;
     color: rgb(220, 143, 143);
 }
-
 .key-Space{
     width: 450px;
     background: rgb(220, 143, 143);
@@ -79,14 +84,12 @@
     background-position: center;
     border-radius: 20px;
 }
-
 .key-Shift,
 .key-Backspace{
     width: 140px;
     background-size: cover;
     border-radius: 20px;
 }
-
 .key-Ctrl,
 .key-Win,
 .key-Del,
@@ -94,10 +97,37 @@
 .key-Tab{
     background-size: cover;
 }
-
 .key-CapsLock{
     width: 130px;
     background-size: cover;
     border-radius: 20px;
     color: rgb(220, 143, 143);
 }
+
+.key-Up{
+    background-image: url("up.png");
+}
+
+.key-Down{
+    background-image: url("down.png");
+}
+
+.key-Left{
+    background-image: url("left.png");
+}
+
+.key-Right{
+    background-image: url("right.png");
+}
+
+.key-Up,
+.key-Down,
+.key-Left,
+.key-Right{
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    margin: 0;
+    background-position: center;
+    color: transparent;
+ }
