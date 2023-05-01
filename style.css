@@ -1,0 +1,155 @@
+.body{
+    background: rgb(220, 143, 143);
+    background:  url("background.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(48, 35, 79);
+    font-family: 'Lucida Sans Unicode', sans-serif;
+}
+.textarea{
+    width: 1200px;
+    min-height: 150px;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    background-color: rgb(166, 166, 197);
+    border-radius: 40px;
+    border: 4px solid rgb(48, 35, 79);
+    margin: auto;
+    background-origin: border-box;
+    margin-bottom: 50px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    outline: none;
+}
+.keyboard-wrapper{
+    width: 1050px;
+    border-radius: 40px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-self: center;
+    background-color: rgb(48, 35, 79);
+}
+.keyboard-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.key{
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    background-size: contain;
+    position: relative;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size: 15px;
+    color: rgb(220, 143, 143);
+    transition-duration: 0.1s;
+}
+
+.key:active,
+.pressed:not(.key-Shift),
+.enabled {
+    transform: scale(0.8);
+    transition-duration: 0.1s;
+}
+
+.footer{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(48, 35, 79);
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    order: 6;
+    background: rgb(166, 166, 197);
+    max-width: 1600px;
+    align-self: center;
+    margin-top: 10px;
+}
+.key-Enter{
+    width: 100px;
+    border-radius: 20px;
+    background-size: cover;
+    color: rgb(220, 143, 143);
+}
+.key-Space{
+    width: 450px;
+    background: rgb(220, 143, 143);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+.key-Shift,
+.key-Backspace{
+    width: 140px;
+    background-size: cover;
+    border-radius: 20px;
+}
+.key-Ctrl,
+.key-Win,
+.key-Del,
+.key-Alt,
+.key-Tab{
+    background-size: cover;
+}
+.key-CapsLock{
+    width: 130px;
+    background-size: cover;
+    border-radius: 20px;
+    color: rgb(220, 143, 143);
+}
+
+.key-Up{
+    background-image: url("up.png");
+}
+
+.key-Down{
+    background-image: url("down.png");
+}
+
+.key-Left{
+    background-image: url("left.png");
+}
+
+.key-Right{
+    background-image: url("right.png");
+}
+
+.key-Up,
+.key-Down,
+.key-Left,
+.key-Right{
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    margin: 0;
+    background-position: center;
+    color: transparent;
+ }
+ .key:hover{
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+    box-shadow: 4px 4px 41px 23px rgb(220, 143, 143);
+    border-radius: 30%;
+    font-size: 1em;
+}
+
+.key:hover:not(.key-Shift, .key-Space, .key-Tab, .key-Alt, .key-Backspace, .key-CapsLock, .key-Ctrl, .key-Del, .key-Down, .key-Enter, .key-Left, .key-Right, .key-Up, .key-Win),
+.key:active:not(.key-Shift, .key-Space, .key-Tab, .key-Alt, .key-Backspace, .key-CapsLock, .key-Ctrl, .key-Del, .key-Down, .key-Enter, .key-Left, .key-Right, .key-Up, .key-Win),
+.pressed:not(.key-Shift, .key-Space, .key-Tab, .key-Alt, .key-Backspace, .key-CapsLock, .key-Ctrl, .key-Del, .key-Down, .key-Enter, .key-Left, .key-Right, .key-Up, .key-Win){
+    transform: scale(1.1);
+    box-shadow: 4px 4px 41px 23px rgb(220, 143, 143);
+    transition-duration: 0.1s;
+    border-radius: 30%;
+    font-size: 1em;
+}
+
+.key span {
+    position: relative;
+    top: 30%;
+}
